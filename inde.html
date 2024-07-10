@@ -4,14 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first web page!</title>
+    <!-- Defining style in head -->
+    <style>
+      div {
+        width: 50vw;
+        background-color: red;
+      }
+      img {
+        width: 200px;
+        /* height: 50%; It will be adjusted automatically!*/
+        border-radius: 100px;
+        float: left;
+        /* send only image to the left side and two paragraphs stay still at the right side! */
+      }
+    </style>
   </head>
   <body>
-    <img
-      style="width: 50%"
-      src="/images/breakfast-traditional-Iran.jpg"
-      alt="breakfast-traditional-Iran"
-    />
-    <p>@Maximilian</p>
-    <p>I love to learn constantly!</p>
+    <!-- style="width: 50%; height: 50%" -->
+    <div>
+      <img
+        src="/images/breakfast-traditional-Iran.jpg"
+        alt="breakfast-traditional-Iran"
+      />
+      <p>@Maximilian</p>
+      <p>I love to learn constantly!</p>
+    </div>
   </body>
 </html>
