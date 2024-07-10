@@ -8,25 +8,37 @@
     <style>
       div {
         width: 50vw;
+        /* width is half of the view port's width of the page! */
+        height: 50vh;
+        /* height is half of the view port's height of the page! */
         background-color: red;
+        padding: 50px;
+        /* set 50px padding for all sides => the image and two paragraphs will have this space from all sides(top,right,bottom,left) */
       }
+
       img {
         width: 200px;
         /* height: 50%; It will be adjusted automatically!*/
         border-radius: 100px;
         float: left;
-        /* send only image to the left side and two paragraphs stay still at the right side! */
+        /* move only image to the left side and two paragraphs stay still at the right side! */
+        margin-right: 10px;
+        /* 10px space between the image at the left and two paragraphs at the right! */
+      }
+
+      .username {
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <!-- style="width: 50%; height: 50%" -->
+    <!-- Inline Style => style="width: 50%; height: 50%" -->
     <div>
       <img
         src="/images/breakfast-traditional-Iran.jpg"
         alt="breakfast-traditional-Iran"
       />
-      <p>@Maximilian</p>
+      <p class="username">@Maximilian</p>
       <p>I love to learn constantly!</p>
     </div>
   </body>
