@@ -3,62 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tables</title>
-    <style>
-      table,
-      td,
-      th {
-        border: 1px solid red;
-        /* To remove the extra lines in the box */
-        border-collapse: collapse;
-        padding: 5px;
-      }
+    <title>Containers</title>
 
-      .totalValue {
-        text-align: left;
+    <style>
+      .product {
+        background-color: gold;
+        /* width: 300px; */
+        width: 50%;
       }
-      /* This doesn't work but colspan="2" works!*/
-      /* #th {
-        column-span: 2;
-      } */
     </style>
   </head>
   <body>
-    <table>
-      <!-- tr is the same for both but we have for the first, th and for the second td-->
-      <!-- thead for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS but anyway the result on the browser is the SAME => This is called SEMANTICS, it means Meaningful!-->
-      <thead>
-        <tr>
-          <!-- colspan="2" takes two columns instead of one column! -->
-          <th id="th" colspan="2">Expenses</th>
-        </tr>
-        <tr>
-          <th>Category</th>
-          <th>Amount</th>
-        </tr>
-      </thead>
-      <!-- thead for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
-      <!-- tbody for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
-      <tbody>
-        <tr>
-          <td>Marketing</td>
-          <td>$100</td>
-        </tr>
-        <tr>
-          <td>Accounting</td>
-          <td>$200</td>
-        </tr>
-      </tbody>
-      <!-- tbody for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
-      <!-- tfoot for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
-      <tfoot>
-        <!-- for footer like header we have the tr and th surrounded with tfoot-->
-        <tr>
-          <th>Sum</th>
-          <th class="totalValue">$300</th>
-        </tr>
-      </tfoot>
-      <!-- tfoot for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
-    </table>
+    <div class="product">
+      <!-- div element is a block level element and it covers the entire width of the page although it has a little bit content!-->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolore!
+      </p>
+      <a href="#">Link</a>
+    </div>
+    <div class="product">
+      <!-- div element is a block level element and it covers the entire width of the page and start a new line although it has a little bit content!-->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolore!
+      </p>
+      <a href="#">Link</a>
+    </div>
   </body>
 </html>
