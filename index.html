@@ -10,10 +10,19 @@
         height: 300px;
         object-fit: cover;
       }
+
+      video {
+        width: 400px;
+      }
     </style>
   </head>
   <body>
     <img src="/gallery/coffee.jpg" alt="an image of a coffee" />
-    <video loop controls src="/video/ocean.mp4"></video>
+    <video loop controls autoplay src="/video/ocean.mp4">
+      Your browser doesn't support videos!
+    </video>
+    <audio controls autoplay loop src="/Audio/Pixabay.mp3">
+      Your browser doesn't support Audios!
+    </audio>
   </body>
 </html>
