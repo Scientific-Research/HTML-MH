@@ -18,18 +18,26 @@
   <body>
     <table>
       <!-- tr is the same for both but we have for the first, th and for the second td-->
-      <tr>
-        <th>Category</th>
-        <th>Amount</th>
-      </tr>
-      <tr>
-        <td>Marketing</td>
-        <td>$100</td>
-      </tr>
-      <tr>
-        <td>Accounting</td>
-        <td>$200</td>
-      </tr>
+      <!-- thead for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS but anyway the result on the browser is the SAME => This is called SEMANTICS, it means Meaningful!-->
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <!-- thead for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
+      <!-- tbody for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <!-- tbody for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
     </table>
   </body>
 </html>
