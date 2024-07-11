@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Elements!</title>
+    <style>
+      .highlight {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TRY TO USE FOLLOWING SEMANTIC ELEMENTS:
+    article,
+    time,
+    mark,
+    figure 
+    -->
+    <!-- It would be a very big catastrophy when we use only div and span in our HTML and don't use the above semantic elements! -->
+    <article class="article">
+      <h1>Heading</h1>
+      <!-- we use the time semantic element for search engine optimization - but on the browser we see the result as only a paragraph with or without time semantic element!  -->
+      <p>
+        Published
+        <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time>
+      </p>
+      <p>
+        <!-- we use mark semantic element instead of span element - when we use the mark element, we don't need specify the highlight class, it has a default hightlight color which is yellow!  -->
+        <mark>Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit.
+        Cum sapiente perferendis aliquam? Repellendus quod, deserunt fugiat
+        explicabo maxime aliquid nulla.
+      </p>
+      <figure>
+        <!-- We put the image in a figure! -->
+        <img src="" alt="" />
+        <figcaption>My coffee this morning!</figcaption>
+        <!-- figcaption is like alt for image - needs some explanations! -->
+      </figure>
+    </article>
+  </body>
+</html>
