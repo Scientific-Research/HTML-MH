@@ -13,6 +13,10 @@
         border-collapse: collapse;
         padding: 5px;
       }
+      /* This doesn't work but colspan="2" works!*/
+      /* #th {
+        column-span: 2;
+      } */
     </style>
   </head>
   <body>
@@ -20,6 +24,10 @@
       <!-- tr is the same for both but we have for the first, th and for the second td-->
       <!-- thead for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS but anyway the result on the browser is the SAME => This is called SEMANTICS, it means Meaningful!-->
       <thead>
+        <tr>
+          <!-- colspan="2" takes two columns instead of one column! -->
+          <th id="th" colspan="2">Expenses</th>
+        </tr>
         <tr>
           <th>Category</th>
           <th>Amount</th>
@@ -38,6 +46,16 @@
         </tr>
       </tbody>
       <!-- tbody for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
+      <!-- tfoot for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
+      <tfoot>
+        <footer>
+          <tr>
+            <td>Sume</td>
+            <td>$300</td>
+          </tr>
+        </footer>
+      </tfoot>
+      <!-- tfoot for SEO: SEARCH ENGINE OPTIMIZATION and SCREEN READERS-->
     </table>
   </body>
 </html>
