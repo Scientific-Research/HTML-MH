@@ -1,0 +1,28 @@
+/* > means only p which is direct child of section would be red color and not the second p which is indirect child of section and is direct child of article */
+section > p {
+  color: red;
+}
+
+section article p {
+  color: blue;
+}
+
+/* .first {
+  color: red;
+} */
+
+/* A descendant selector */
+/* #products p {
+  color: orange;
+} */
+
+/* how can i select the p as siblings to the section => p comes directly after section: */
+/* i can display it with + sign */
+section + p {
+  color: green;
+}
+
+/* using tilt => ~ we can select all paragraphs after section which are siblings of section and make them rgb(191, 0, 255) color!*/
+section ~ p {
+  color: rgb(191, 0, 255);
+}
