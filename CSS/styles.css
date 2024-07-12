@@ -35,4 +35,13 @@ p::before {
   display: block;
   /* This will change the element form an inline element to a Block element. 
   A block level elemnt starts in a new line and takes the entire available space, that's why the ... starts from beginning of the line and takes the entire space on the first line and move the Lorem to start from the beginning of the second line! */
+  /* When we have more than one Paragraph, it will apear at the beginning of all the paragraphs! */
+}
+
+/* ::AFTER PSEUDO ELEMENT SELECTOR  */
+p::after {
+  content: "...";
+  display: block;
+  /* display:block will send the ... to the beginning of the next line and it will takes the entire space available!*/
+  /* When we have more than one Paragraph, it will apear at the end of all the paragraphs! */
 }
