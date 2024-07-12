@@ -1,9 +1,16 @@
 p {
   color: dodgerblue;
+
+  /* an example of the feature will not get inherited from p by strong: */
+  border: 1px solid greenyellow;
 }
 
-/* span inherit the color from p and when we specify a new color, we will overwrite that! */
-span {
+/* strong inherit the color from p and when we specify a new color, we will overwrite that! */
+strong {
   /* color: red; */
+
   color: initial; /*We will get ride of the inheritance and the color will get its original color which is black!*/
+
+  border: inherit;
+  /* with border: inherit, we force the strong property to get inherited the border from p  */
 }
