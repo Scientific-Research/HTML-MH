@@ -1,7 +1,8 @@
 /* lowest specifity */
 h1 {
   /* important has more specifity than id! */
-  color: dodgerblue !important;
+  /* color: dodgerblue !important; */
+  color: dodgerblue;
 }
 
 /* lower specifity */
@@ -18,3 +19,13 @@ h1 {
 /* #products {
   color: brown;
 } */
+
+/* the specifity is like !important */
+/* .highlight#products {
+  color: dodgerblue;
+} */
+
+/* has more specifity than only id */
+h1#products {
+  color: dodgerblue;
+}
