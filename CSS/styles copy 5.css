@@ -1,0 +1,36 @@
+/* lowest specifity */
+h1 {
+  /* important has more specifity than id! */
+  /* color: dodgerblue !important; */
+  color: dodgerblue;
+}
+
+/* lower specifity */
+.highlight {
+  color: deeppink;
+}
+
+/* highest specifity */
+#products {
+  color: green;
+}
+
+/* highest specifity => with the same specifity(both are id) => the last color will be applied!*/
+/* #products {
+  color: brown;
+} */
+
+/* the specifity is like !important */
+/* .highlight #products {
+  color: dodgerblue;
+} */
+
+/* has more specifity than only id */
+/* h1 #products {
+  color: dodgerblue;
+} */
+
+/* the specifity is like !important */
+.featured #products {
+  color: dodgerblue;
+}
