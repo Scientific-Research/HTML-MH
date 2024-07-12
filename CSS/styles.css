@@ -1,6 +1,7 @@
 /* lowest specifity */
 h1 {
-  color: dodgerblue;
+  /* important has more specifity than id! */
+  color: dodgerblue !important;
 }
 
 /* lower specifity */
@@ -14,6 +15,6 @@ h1 {
 }
 
 /* highest specifity => with the same specifity(both are id) => the last color will be applied!*/
-#products {
+/* #products {
   color: brown;
-}
+} */
