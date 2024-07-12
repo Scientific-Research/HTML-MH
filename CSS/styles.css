@@ -15,3 +15,9 @@ section article p {
 /* #products p {
   color: orange;
 } */
+
+/* how can i select the p as sieblings to the section => p comes directly after section: */
+/* i can display it with + sign */
+section + p {
+  color: green;
+}
