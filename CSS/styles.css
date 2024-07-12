@@ -58,8 +58,13 @@
 } */
 
 /* When I remove the p, it will work and shows me the correct answer -  With p, it will not show me the correct answer and it will show me the false answer! */
-article :last-child {
+/* article :last-child {
   font-size: large;
   font-style: italic;
   color: red;
+} */
+
+/* WE WANT TO HIGHLIGHT ONLY ALL THE ODD ITEMS */
+ul li:nth-child(odd) {
+  color: orange;
 }
