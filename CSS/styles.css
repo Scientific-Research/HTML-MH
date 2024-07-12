@@ -1,8 +1,17 @@
-/* section p {
+/* > means only p which is direct child of section would be red color and not the second p which is indirect child of section and is direct child of article */
+section > p {
+  color: red;
+}
+
+section article p {
+  color: blue;
+}
+
+/* .first {
   color: red;
 } */
 
 /* A descendant selector */
-#products p {
+/* #products p {
   color: orange;
-}
+} */
