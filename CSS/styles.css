@@ -1,6 +1,16 @@
-#products{
-
+#products {
 }
-.product{
-  
+.product {
+}
+
+/* Using attribute instead of type, id and class */
+/* we select all ancher elemnets with target="_blank" attribute: */
+a[target="_blank"] {
+  color: red;
+}
+
+/* we select all ancher elemnets with href="https://google.com" attribute: */
+a[href="https://google.com"]
+{
+  color: green;
 }
