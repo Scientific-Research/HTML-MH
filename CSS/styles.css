@@ -1,0 +1,8 @@
+/* section p {
+  color: red;
+} */
+
+/* A descendant selector */
+#products p {
+  color: orange;
+}
