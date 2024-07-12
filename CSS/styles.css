@@ -17,3 +17,9 @@ p::first-line {
   font-style: italic;
   font-weight: bold;
 }
+
+/* overwrite the color of selected part in a paragraph which is blue as default!*/
+/* Here we overwrite the blur color with greenyellow color! */
+p::selection {
+  color: greenyellow;
+}
