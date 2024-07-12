@@ -10,7 +10,14 @@ a[target="_blank"] {
 }
 
 /* we select all ancher elemnets with href="https://google.com" attribute: */
+/* But the following code is fragile because when i add for example a slash the athe end of this URL in HTML file, the css sttribute below will not work anymore and we have to use the flexible version which comes next */
 a[href="https://google.com"]
 {
   color: green;
+}
+
+/* In this case, to make it more flexible => we use only word Google and prefix the equal sign with asterix:*/
+/* It doesn't matter what comes before and after google word which is shown with start sign - the important thing is that when we add something in between google word, we will run into a problem, otherwise when we add a character before and aftre this word, we will not get a problem! */
+a[href*="google"] {
+  color: orange;
 }
