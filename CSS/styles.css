@@ -21,3 +21,19 @@ a[href="https://google.com"]
 a[href*="google"] {
   color: orange;
 }
+
+/* we can check whether the attribute starts with a given value? => the href beginns with https?yes => it will select all ancher elements in which href elements starts with https and chnage their color to brown!*/
+a[href^="https"] {
+  color: brown;
+}
+
+/* If the attribute end with a given value? */
+a[href$=".com"] {
+  color: cornflowerblue;
+}
+
+/* OR we can have a comination of both of them: */
+/* Select all ancher elements which beginns with https and ends with .com and then change their color to darkgoldenrod */
+a[href^="https"][href$=".com"] {
+  color: darkgoldenrod;
+}
