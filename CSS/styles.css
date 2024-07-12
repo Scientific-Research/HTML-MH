@@ -21,3 +21,8 @@ section article p {
 section + p {
   color: green;
 }
+
+/* using tilt => ~ we can select all paragraphs after section which are siblings of section and make them rgb(191, 0, 255) color!*/
+section ~ p {
+  color: rgb(191, 0, 255);
+}
