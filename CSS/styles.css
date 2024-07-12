@@ -1,12 +1,12 @@
 /* First SOLUTION using Pseudo element selector => ::firstletter */
-/* p::first-letter {
+p::first-letter {
   color: deeppink;
   font-weight: bold;
-} */
+}
 
-/* Second SOLUTION using the routine class selector! which is completely unnecessary due to use of above Pseudo element selector! */
-.first-letter {
+/* Second SOLUTION using the routine class selector! which is completely unnecessary due to use of above Pseudo element selector, that's why i commented the below class out!*/
+/* .first-letter {
   color: deeppink;
   font-weight: bold;
   font-size: 140%;
-}
+} */
