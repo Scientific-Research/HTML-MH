@@ -21,11 +21,16 @@ h1 {
 } */
 
 /* the specifity is like !important */
-/* .highlight#products {
+/* .highlight #products {
   color: dodgerblue;
 } */
 
 /* has more specifity than only id */
-h1#products {
+/* h1 #products {
+  color: dodgerblue;
+} */
+
+/* the specifity is like !important */
+.featured #products {
   color: dodgerblue;
 }
