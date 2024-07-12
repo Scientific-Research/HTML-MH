@@ -1,0 +1,17 @@
+/* article > p {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* .first {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR THE FOLLOWING USING PSEUDO CLASS => THEY ARE NOT REAL CLASSES THAT WE DEFINE, RATHER, THEY ARE THE CLASSES THAT ARE APPLIED BY THE BROWSER BY DEFAULT!*/
+
+p:first-child {
+  font-size: large;
+  font-style: italic;
+  color: red;
+}
