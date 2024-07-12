@@ -10,7 +10,20 @@
   color: red;
 } OR THE FOLLOWING USING PSEUDO CLASS SELECTOR => THEY ARE NOT REAL CLASSES THAT WE DEFINE, RATHER, THEY ARE THE CLASSES THAT ARE APPLIED BY THE BROWSER BY DEFAULT!*/
 /* using Pseudo element => article :first-child to select the first paragraph between two paragraphs  - INSTEAD OF CLASS SELECTOR WE HAVE PSEUDO CLASS SELECTOR BELOW:*/
-article :first-child {
+/* article :first-child {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR the FOLLOWING*/
+
+/* article :nth-child(1) {
+  font-size: large;
+  font-style: italic;
+  color: green;
+} */
+
+/* OR THE FOLLOWING ONLY APPLIES ON THE FIRST ITEM FROM THE SMAE TYPE, FOR EXAMPLE ONLY ON THE FIRST PARAGRAPH WHEN ALL OF THEM ARE PARAGRAPHS, OR ONLY ON THE FIRST HEADING WHEN ALL OF THEM ARE HEADING! */
+article :first-of-type {
   font-size: large;
   font-style: italic;
   color: red;
