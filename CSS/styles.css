@@ -66,6 +66,17 @@ article :last-child {
 }
 
 /* WE WANT TO HIGHLIGHT ONLY ALL THE ODD ITEMS */
-ul li:nth-child(odd) {
+/* nth-child() is like a function in a programming language and get the value as input!*/
+/* ul li:nth-child(odd) {
+  color: deeppink;
+} */
+
+/* WE WANT TO HIGHLIGHT ONLY ALL THE EVEN ITEMS */
+/* ul li:nth-child(even) {
+  color: deeppink;
+} */
+
+/* WE WANT TO HIGHLIGHT ONLY EVERY THIRD ITEM IN THE LIST! */
+ul li:nth-child(3n) {
   color: deeppink;
 }
