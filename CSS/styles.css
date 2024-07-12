@@ -8,8 +8,8 @@
   font-size: large;
   font-style: italic;
   color: red;
-} OR THE FOLLOWING USING PSEUDO CLASS => THEY ARE NOT REAL CLASSES THAT WE DEFINE, RATHER, THEY ARE THE CLASSES THAT ARE APPLIED BY THE BROWSER BY DEFAULT!*/
-/* using Pseudo element => article :first-child to select the first paragraph between two paragraphs */
+} OR THE FOLLOWING USING PSEUDO CLASS SELECTOR => THEY ARE NOT REAL CLASSES THAT WE DEFINE, RATHER, THEY ARE THE CLASSES THAT ARE APPLIED BY THE BROWSER BY DEFAULT!*/
+/* using Pseudo element => article :first-child to select the first paragraph between two paragraphs  - INSTEAD OF CLASS SELECTOR WE HAVE PSEUDO CLASS SELECTOR BELOW:*/
 article :first-child {
   font-size: large;
   font-style: italic;
