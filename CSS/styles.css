@@ -80,3 +80,14 @@ article :last-child {
 ul li:nth-child(3n) {
   color: deeppink;
 }
+
+/* WE HAVE ALSO A FEW PSEUDO CLASSES TO WORK WITH HYPERLINKS, LIKE visited, hover, active, link => LAHV (O LAEB ;))*/
+
+a:visited {
+  color: red;
+}
+
+/* a:link will apply automatically to all hyperlinks with its default color when i don't specify any color to that, but below i specify the dodgerblue color to that to overwrite the default color! */
+a:link {
+  color: dodgerblue;
+}
