@@ -30,7 +30,21 @@
 } */
 
 /* applies only to the first paragraph and not first heading anymore, because we mentioned here p which is only for paragraphs! */
-article p:first-of-type {
+/* article p:first-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* last item for every type would be red! => it means the last heading and the last paragraph! */
+/* article :last-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* only last item of paragraph would be red, because we mentioned here only p and the heading would not be there! */
+article p:last-of-type {
   font-size: large;
   font-style: italic;
   color: red;
