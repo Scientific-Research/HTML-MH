@@ -1,0 +1,108 @@
+/* article > p {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* .first {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR THE FOLLOWING USING PSEUDO CLASS SELECTOR => THEY ARE NOT REAL CLASSES THAT WE DEFINE, RATHER, THEY ARE THE CLASSES THAT ARE APPLIED BY THE BROWSER BY DEFAULT!*/
+/* using Pseudo element => article :first-child to select the first paragraph between two paragraphs  - INSTEAD OF CLASS SELECTOR WE HAVE PSEUDO CLASS SELECTOR BELOW:*/
+/* article :first-child {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR the FOLLOWING*/
+
+/* article :nth-child(1) {
+  font-size: large;
+  font-style: italic;
+  color: green;
+} */
+
+/* OR THE FOLLOWING ONLY APPLIES ON THE FIRST ITEM FROM THE SMAE TYPE, FOR EXAMPLE ONLY ON THE FIRST PARAGRAPH WHEN ALL OF THEM ARE PARAGRAPHS, OR ONLY ON THE FIRST HEADING WHEN ALL OF THEM ARE HEADING! */
+/* article :first-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* applies only to the first paragraph and not first heading anymore, because we mentioned here p which is only for paragraphs! */
+/* article p:first-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* last item for every type would be red! => it means the last heading and the last paragraph! */
+/* article :last-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* only last item of paragraph would be red, because we mentioned here only p and the heading would not be there! */
+/* article p:last-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR THE FOLLOWING WHICH GIVES US EXACTLY THE SAME RESULT => because this paragraph is the last child too! */
+
+/* BUT THE PROBLEM IS THAT THE LAST CHILD AND THE FIRST CHILD ARE FRAGILE, BECAUSE WHEN WE ADD A NEW ITEM AT THE TOP OR AT THE BOTTOM, THE ORDER WILL CHANGE AND WE WILL NOT GET THE SAME RESULT AS BEFORE! => As you see the following doesn't work exactly as above and we have to remove the p and then it will work!*/
+/* article p:last-child {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* When I remove the p, it will work and shows me the correct answer -  With p, it will not show me the correct answer and it will show me the false answer! */
+article :last-child {
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+  /* color: red; */
+}
+
+/* WE WANT TO HIGHLIGHT ONLY ALL THE ODD ITEMS */
+/* nth-child() is like a function in a programming language and get the value as input!*/
+/* ul li:nth-child(odd) {
+  color: deeppink;
+} */
+
+/* WE WANT TO HIGHLIGHT ONLY ALL THE EVEN ITEMS */
+/* ul li:nth-child(even) {
+  color: deeppink;
+} */
+
+/* WE WANT TO HIGHLIGHT ONLY EVERY THIRD ITEM IN THE LIST! */
+ul li:nth-child(3n) {
+  color: deeppink;
+}
+
+/* WE HAVE ALSO A FEW PSEUDO CLASSES TO WORK WITH HYPERLINKS, LIKE visited, hover, active, link => LAHV (O LAEB ;))*/
+
+a:visited {
+  color: red;
+}
+
+/* a:link will apply automatically to all hyperlinks with its default color when i don't specify any color to that, but below i specify the dodgerblue color to that to overwrite the default color! */
+a:link {
+  color: dodgerblue;
+}
+
+/* WHAT ABOUT THE HOVER EFFECT: HOVER CAN APPLY TO PRETTY MUCH EVERYTHING NOT ONLY ANCHER RATHER DIV, SECTION, P, ...*/
+a:hover {
+  color: pink;
+  font-style: italic;
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 2px black;
+}
+
+/* When user uses Tab key on the page to focus on what user currently has selected, AS soon as the user select the google link using Tab key, the color of the Google word will chnage to the green color!*/
+a:focus {
+  color: chartreuse;
+}
