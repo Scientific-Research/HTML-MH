@@ -28,3 +28,8 @@ p::selection {
 ::selection {
   color: greenyellow;
 }
+
+/* This is not a concret elemnet like p or h2 in HTML but it is only a Pseudo element! */
+p::before {
+  content: "...";
+}
