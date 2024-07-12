@@ -91,3 +91,13 @@ a:visited {
 a:link {
   color: dodgerblue;
 }
+
+/* WHAT ABOUT THE HOVER EFFECT: HOVER CAN APPLY TO PRETTY MUCH EVERYTHING NOT ONLY ANCHER RATHER DIV, SECTION, P, ...*/
+a:hover {
+  color: pink;
+  font-style: italic;
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 2px black;
+}
