@@ -23,7 +23,14 @@
 } */
 
 /* OR THE FOLLOWING ONLY APPLIES ON THE FIRST ITEM FROM THE SMAE TYPE, FOR EXAMPLE ONLY ON THE FIRST PARAGRAPH WHEN ALL OF THEM ARE PARAGRAPHS, OR ONLY ON THE FIRST HEADING WHEN ALL OF THEM ARE HEADING! */
-article :first-of-type {
+/* article :first-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* applies only to the first paragraph and not first heading anymore, because we mentioned here p which is only for paragraphs! */
+article p:first-of-type {
   font-size: large;
   font-style: italic;
   color: red;
