@@ -1,0 +1,41 @@
+/* This css file is related to the index copy 11.html */
+
+#products {
+}
+.product {
+}
+
+/* Using attribute instead of type, id and class */
+/* we select all ancher elemnets with target="_blank" attribute: */
+a[target="_blank"] {
+  color: red;
+}
+
+/* we select all ancher elemnets with href="https://google.com" attribute: */
+/* But the following code is fragile because when i add for example a slash the athe end of this URL in HTML file, the css sttribute below will not work anymore and we have to use the flexible version which comes next */
+a[href="https://google.com"]
+{
+  color: green;
+}
+
+/* In this case, to make it more flexible => we use only word Google and prefix the equal sign with asterix:*/
+/* It doesn't matter what comes before and after google word which is shown with start sign - the important thing is that when we add something in between google word, we will run into a problem, otherwise when we add a character before and aftre this word, we will not get a problem! */
+a[href*="google"] {
+  color: orange;
+}
+
+/* we can check whether the attribute starts with a given value? => the href beginns with https?yes => it will select all ancher elements in which href elements starts with https and chnage their color to brown!*/
+a[href^="https"] {
+  color: brown;
+}
+
+/* If the attribute end with a given value? */
+a[href$=".com"] {
+  color: cornflowerblue;
+}
+
+/* OR we can have a comination of both of them: */
+/* Select all ancher elements which beginns with https and ends with .com and then change their color to darkgoldenrod */
+a[href^="https"][href$=".com"] {
+  color: darkgoldenrod;
+}
