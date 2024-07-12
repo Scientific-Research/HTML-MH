@@ -44,7 +44,21 @@
 } */
 
 /* only last item of paragraph would be red, because we mentioned here only p and the heading would not be there! */
-article p:last-of-type {
+/* article p:last-of-type {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} OR THE FOLLOWING WHICH GIVES US EXACTLY THE SAME RESULT => because this paragraph is the last child too! */
+
+/* BUT THE PROBLEM IS THAT THE LAST CHILD AND THE FIRST CHILD ARE FRAGILE, BECAUSE WHEN WE ADD A NEW ITEM AT THE TOP OR AT THE BOTTOM, THE ORDER WILL CHANGE AND WE WILL NOT GET THE SAME RESULT AS BEFORE! => As you see the following doesn't work exactly as above and we have to remove the p and then it will work!*/
+/* article p:last-child {
+  font-size: large;
+  font-style: italic;
+  color: red;
+} */
+
+/* When I remove the p, it will work and shows me the correct answer -  With p, it will not show me the correct answer and it will show me the false answer! */
+article :last-child {
   font-size: large;
   font-style: italic;
   color: red;
