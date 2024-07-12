@@ -1,47 +1,19 @@
-/* First SOLUTION using Pseudo element selector => ::firstletter */
-p::first-letter {
+/* lowest specifity */
+h1 {
+  color: dodgerblue;
+}
+
+/* lower specifity */
+.highlight {
   color: deeppink;
-  font-weight: bold;
 }
 
-/* Second SOLUTION using the routine class selector! which is completely unnecessary due to use of above Pseudo element selector, that's why i commented the below class out!*/
-/* .first-letter {
-  color: deeppink;
-  font-weight: bold;
-  font-size: 140%;
-} */
-
-/* to select the first line of a paragraph using Pseudo element Selector*/
-p::first-line {
-  color: orange;
-  font-style: italic;
-  font-weight: bold;
+/* highest specifity */
+#products {
+  color: green;
 }
 
-/* overwrite the color of selected part in a paragraph which is blue as default!*/
-/* Here we overwrite the blur color with greenyellow color! */
-p::selection {
-  color: greenyellow;
-}
-
-/* but if we want to make it as GENERAL for all elements on the Page, WE HAVE TO REMOVE THE p AT THE BEGINNING! */
-::selection {
-  color: greenyellow;
-}
-
-/* This is not a concret elemnet like p or h2 in HTML but it is only a Pseudo element! */
-p::before {
-  content: "...";
-  display: block;
-  /* This will change the element form an inline element to a Block element. 
-  A block level elemnt starts in a new line and takes the entire available space, that's why the ... starts from beginning of the line and takes the entire space on the first line and move the Lorem to start from the beginning of the second line! */
-  /* When we have more than one Paragraph, it will apear at the beginning of all the paragraphs! */
-}
-
-/* ::AFTER PSEUDO ELEMENT SELECTOR  */
-p::after {
-  content: "...";
-  display: block;
-  /* display:block will send the ... to the beginning of the next line and it will takes the entire space available!*/
-  /* When we have more than one Paragraph, it will apear at the end of all the paragraphs! */
+/* highest specifity => with the same specifity(both are id) => the last color will be applied!*/
+#products {
+  color: brown;
 }
