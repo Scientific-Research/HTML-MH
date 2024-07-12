@@ -23,3 +23,8 @@ p::first-line {
 p::selection {
   color: greenyellow;
 }
+
+/* but if we want to make it as GENERAL for all elements on the Page, WE HAVE TO REMOVE THE p AT THE BEGINNING! */
+::selection {
+  color: greenyellow;
+}
