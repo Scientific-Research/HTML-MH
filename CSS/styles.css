@@ -17,4 +17,9 @@
   /* TO USE GRADIENTS, WE CAN NOT USE THE BACKGROUND-COLOR, WE NEED AN IMAGE, WE CAN USE BACKGROUND-IMAGE OR BACKGROUND */
   /* WE NEED LINEAR-GRADIENT AND TWO COLORS: BY DEFAULT THE DIRECTION OF THIS TRANSITION IS FROM TOP TO BOTTOM BUT WE CAN EASILY CHANGE IT!*/
   background: linear-gradient(to right, dodgerblue, yellow);
+  /* it starts from left with first color and goes to th right with second color! */
+
+  /* we can use both background-image or background, both are the same! */
+  background-image: linear-gradient(to bottom right, dodgerblue, yellow);
+  /* it starts exactly from opposite side of the bottom right => it means the TOP LEFT!  */
 }
