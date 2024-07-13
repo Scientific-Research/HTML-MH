@@ -2,4 +2,12 @@
   height: 50vh;
   width: 50vw;
   background-color: dodgerblue;
+  box-shadow: 10px 10px 7px black;
+  /* first value: horizontal distance of the shadow to the element */
+  /* Positive value: shift the shadow to the right */
+  /* Negative value: shift the shadow to the left */
+
+  /* second value: vertical distance of the shadow to the element */
+  /* Positive value: shift the shadow to the down */
+  /* Negative value: shift the shadow to the up */
 }
