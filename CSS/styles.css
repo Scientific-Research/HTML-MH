@@ -45,4 +45,14 @@
 
   background: radial-gradient(circle at top left, white, yellow);
   /* Circle starts from top left with white color and gradually transits to the right bottom with yellow color!*/
+
+  /* CREATING GRADIENT USING THIS WEBSITE:cssgradient.io */
+  /* OR WE CAN USE THE CSS GRADIENT TOOL FROM THIS WEBSITE: cssgradient.io TO DO IT FOR US - MUCH EASIER THAN TO CREATE THE GRADIENT WITH HAND:*/
+  background: rgb(248, 255, 21);
+  /*In case that, our browser doesn't recognize the gradient, our browser uses the above plain rgb color*/
+  background: linear-gradient(
+    18deg,
+    rgba(248, 255, 21, 1) 28%,
+    rgba(215, 65, 13, 1) 87%
+  );
 }
