@@ -7,4 +7,7 @@
   border: 5px solid royalblue;
   border: 5px dotted royalblue;
   border: 5px dashed royalblue;
+  /* border-top: 20px solid royalblue; */
+  border-width: 10px 20px 10px 20px; /*trbl => terrible;) => top right bottom left*/
+  border-width: 10px 20px;
 }
