@@ -10,4 +10,11 @@
 
   /* get the different color using colorpicker from Google!:
   https://www.google.com/search?client=firefox-b-d&q=colorpicker */
+
+  /* GRADIENTS */
+  /* using gradients, we can make a transition from one color to another color and  do a lot of beautiful color shapes! */
+
+  /* TO USE GRADIENTS, WE CAN NOT USE THE BACKGROUND-COLOR, WE NEED AN IMAGE, WE CAN USE BACKGROUND-IMAGE OR BACKGROUND */
+  /* WE NEED LINEAR-GRADIENT AND TWO COLORS: BY DEFAULT THE DIRECTION OF THIS TRANSITION IS FROM TOP TO BOTTOM BUT WE CAN EASILY CHANGE IT!*/
+  background: linear-gradient(to right, dodgerblue, yellow);
 }
