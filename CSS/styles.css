@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .box {
   height: 50vh;
   width: 50vw;
@@ -19,4 +25,22 @@
   /* BUT IF WE WANT THAT SHADOW COVER ALL SIDES OF BOX AND NOT ONLY THE RIGHT AND BOTTOM SIDES
   - WE HAVE TO SPECIFY FOR BOTH HORIZONTAL AND VERTICAL SIDES 0 AND ONLY SEPCIFY THE BLUR VALUE => IN THIS CASE, THE SHADOW WILL STAY RIGHT BELOW BOX AND WE WILL HAVE A VERY SOFT SHADOW IN ALL SIDES!*/
   box-shadow: 0 0 30px grey;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* HOW CAN WE MAKE THE SHADOW FOR TEXTS: */
+}
+
+h1 {
+  grid-column: 2; /*bring the HEADING Word in grid column No.2*/
+  align-self: center; /*align exactly vertically in center*/
+  justify-self: center; /*align exactly horizontally in center*/
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  /* padding: 160px; */
+  color: white;
+  /* text-shadow: 10px 10px 10px red; */
 }
