@@ -3,5 +3,10 @@
   width: 400px; */
   width: 50vw;
   height: 50vh;
-  background-color: red;
+  background-color: rgba(230, 205, 16, 0.5);
+  /*alpha:0 => transparent, alpah:1 => Opaque */
+  /*with alpha:0.5 the box is semi transparent and the image underneath will be visible- TTHIS IS A VERY POPULAR TECHNICS WE USE IN CSS!*/
+
+  /* get the different color using colorpicker from Google!:
+  https://www.google.com/search?client=firefox-b-d&q=colorpicker */
 }
