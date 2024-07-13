@@ -4,5 +4,6 @@
   background-color: tomato;
   border-radius: 10px;
 
-  box-shadow: 10px 10px 0.1px lightgray;
+  /* box-shadow: 10px 10px 0.5px lightgray; I assign 0.5 to soften a little bit the shadow! */
+  box-shadow: 10px 10px lightgray; /*Without value to soften a little bit the shadow!*/
 }
