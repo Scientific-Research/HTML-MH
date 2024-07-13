@@ -29,4 +29,9 @@
   /* ATTENTION: THE 45deg IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION! */
   background-image: linear-gradient(45deg, dodgerblue, yellow);
   /* start point of the transition would be exactly opposite point of the 45deg => 225deg(180+45) with dodgerblue and the endpoint would be 45deg with yellow color!*/
+
+  background-image: linear-gradient(45deg, dodgerblue 0%, yellow 0%);
+
+  background-image: linear-gradient(45deg, dodgerblue, yellow, tomato);
+  /* we can specify three colors instead of two color and every color takes 33,33% of the entire space - it begins from dodgerblue then goes to yellow and at the end finishes with tomato*/
 }
