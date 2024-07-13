@@ -10,6 +10,8 @@
   margin: 0 auto; /*bring the box in the middle top of the page => A Trick from Jonas*/
   margin-top: 100px;
   background-color: dodgerblue;
+  background-color: gold;
+  background-color: coral;
   box-shadow: 10px 10px 30px grey;
   /* first value: horizontal distance of the shadow to the element */
   /* Positive value: shift the shadow to the right, the same like axis in the Math!*/
@@ -42,5 +44,8 @@ h1 {
   /* margin: 0 auto; */
   /* padding: 160px; */
   color: white;
-  /* text-shadow: 10px 10px 10px red; */
+
+  /* text-shadow: 3px 3px 5px grey; */
+  /* A TRICK => Instead of using grey, we can use a semi transparent black color which blends with every background color */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
