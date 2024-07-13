@@ -1,7 +1,7 @@
 .box {
   /* height: 400px;
   width: 400px; */
-  width: 50vw;
+  width: 80vw;
   height: 50vh;
   /* background-color: rgba(230, 205, 16, 0.5); */
   background-color: #e6cd10;
@@ -39,4 +39,10 @@
 
   background: radial-gradient(white, yellow);
   /* The transition starts from center in a white circle and then goes to the corners */
+
+  background: radial-gradient(circle, white, yellow);
+  /* eclipse will convert to circle! */
+
+  background: radial-gradient(circle at top left, white, yellow);
+  /* Circle starts from top left with white color and gradually transits to the right bottom with yellow color!*/
 }
