@@ -16,10 +16,17 @@
 
   /* TO USE GRADIENTS, WE CAN NOT USE THE BACKGROUND-COLOR, WE NEED AN IMAGE, WE CAN USE BACKGROUND-IMAGE OR BACKGROUND */
   /* WE NEED LINEAR-GRADIENT AND TWO COLORS: BY DEFAULT THE DIRECTION OF THIS TRANSITION IS FROM TOP TO BOTTOM BUT WE CAN EASILY CHANGE IT!*/
+
+  /* ATTENTION: to right IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION */
   background: linear-gradient(to right, dodgerblue, yellow);
   /* it starts from left with first color and goes to th right with second color! */
 
   /* we can use both background-image or background, both are the same! */
+  /* ATTENTION: to bottom right IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION*/
   background-image: linear-gradient(to bottom right, dodgerblue, yellow);
   /* it starts exactly from opposite side of the bottom right => it means the TOP LEFT!  */
+
+  /* ATTENTION: THE 45deg IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION! */
+  background-image: linear-gradient(45deg, dodgerblue, yellow);
+  /* start point of the transition would be exactly opposite point of the 45deg => 225deg(180+45) with dodgerblue and the endpoint would be 45deg with yellow color!*/
 }
