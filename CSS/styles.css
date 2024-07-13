@@ -1,6 +1,6 @@
 .box {
   /* height: 50vh; */
-  height: 600px;
+  height: 200px;
   /* width: 50vw; */
   width: 200px;
   background-color: yellowgreen;
@@ -10,4 +10,8 @@
   /* border-top: 20px solid royalblue; */
   border-width: 10px 20px 10px 20px; /*trbl => terrible;) => top right bottom left*/
   border-width: 10px 20px;
+  border-style: dashed;
+  border-color: yellow;
+  border-radius: 50%;
+  /* when we have a square shape, assigning 50% to border-radius => the square shape will convert to a round shape like circle! */
 }
