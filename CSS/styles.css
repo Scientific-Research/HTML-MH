@@ -1,58 +1,10 @@
 .box {
-  /* height: 400px;
-  width: 400px; */
-  width: 80vw;
-  height: 50vh;
-  /* background-color: rgba(230, 205, 16, 0.5); */
-  background-color: #e6cd10;
-  /*alpha:0 => transparent, alpah:1 => Opaque */
-  /*with alpha:0.5 the box is semi transparent and the image underneath will be visible- TTHIS IS A VERY POPULAR TECHNICS WE USE IN CSS!*/
-
-  /* get the different color using colorpicker from Google!:
-  https://www.google.com/search?client=firefox-b-d&q=colorpicker */
-
-  /* GRADIENTS */
-  /* using gradients, we can make a transition from one color to another color and  do a lot of beautiful color shapes! */
-
-  /* TO USE GRADIENTS, WE CAN NOT USE THE BACKGROUND-COLOR, WE NEED AN IMAGE, WE CAN USE BACKGROUND-IMAGE OR BACKGROUND */
-  /* WE NEED LINEAR-GRADIENT AND TWO COLORS: BY DEFAULT THE DIRECTION OF THIS TRANSITION IS FROM TOP TO BOTTOM BUT WE CAN EASILY CHANGE IT!*/
-
-  /* ATTENTION: to right IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION */
-  background: linear-gradient(to right, dodgerblue, yellow);
-  /* it starts from left with first color and goes to th right with second color! */
-
-  /* we can use both background-image or background, both are the same! */
-  /* ATTENTION: to bottom right IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION*/
-  background-image: linear-gradient(to bottom right, dodgerblue, yellow);
-  /* it starts exactly from opposite side of the bottom right => it means the TOP LEFT!  */
-
-  /* ATTENTION: THE 45deg IS THE END POINT OF THE TRANSITION DIRECTION AND NOT THE START POINT OF THE DIRECTION! */
-  background-image: linear-gradient(45deg, dodgerblue, yellow);
-  /* start point of the transition would be exactly opposite point of the 45deg => 225deg(180+45) with dodgerblue and the endpoint would be 45deg with yellow color!*/
-
-  background-image: linear-gradient(45deg, dodgerblue 0%, yellow 0%);
-
-  background-image: linear-gradient(45deg, dodgerblue, yellow, tomato);
-  /* we can specify three colors instead of two color and every color takes 33,33% of the entire space - it begins from dodgerblue then goes to yellow and at the end finishes with tomato*/
-
-  /* ANOTHER TYPE OF GRADIENT IS RADIAL GRADIENT:*/
-
-  background: radial-gradient(white, yellow);
-  /* The transition starts from center in a white circle and then goes to the corners */
-
-  background: radial-gradient(circle, white, yellow);
-  /* eclipse will convert to circle! */
-
-  background: radial-gradient(circle at top left, white, yellow);
-  /* Circle starts from top left with white color and gradually transits to the right bottom with yellow color!*/
-
-  /* CREATING GRADIENT USING THIS WEBSITE:cssgradient.io */
-  /* OR WE CAN USE THE CSS GRADIENT TOOL FROM THIS WEBSITE: cssgradient.io TO DO IT FOR US - MUCH EASIER THAN TO CREATE THE GRADIENT WITH HAND:*/
-  background: rgb(248, 255, 21);
-  /*In case that, our browser doesn't recognize the gradient, our browser uses the above plain rgb color*/
-  background: linear-gradient(
-    18deg,
-    rgba(248, 255, 21, 1) 28%,
-    rgba(215, 65, 13, 1) 87%
-  );
+  /* height: 50vh; */
+  height: 600px;
+  /* width: 50vw; */
+  width: 200px;
+  background-color: yellowgreen;
+  border: 5px solid royalblue;
+  border: 5px dotted royalblue;
+  border: 5px dashed royalblue;
 }
